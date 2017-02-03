@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="Troy Goodin">
+<meta  content="Stuff from website management"/>
+    <title>Troy's Homepage</title>
+    <style type="text/css">
+    html{
+        height: 100%;
+        background: url(Pictures/background.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+      background-size: cover;
+    }
+    body {
+        height: 100%;
+            min-height: 900px;
+        min-width: 875px;
+        font-family: 'Exo 2', sans-serif;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    div#wrapper{
+        width: 85%;
+        min-width: 775px;
+        height: 800px;
+        max-height: 800px;
+        height: 90%;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        background-color: white;
+    }
+        div#header{
+            width: 100%;
+            height: 20%;
+            min-height: 140px;
+            background-color: #555;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+            div#pic{
+                text-align: center;
+                margin: 0;
+                padding: 35px;
+                background-color: #555;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+                nav#menu {
+                    background-image: url(Pictures/nav.png);
+                    width: 100%;
+                    height: 40px;
+                    margin: auto;
+               }
+               nav#menu a {
+                    text-decoration: none;
+                    display: block;
+                    color: #ffffff;
+                    text-align: center;
+               }
+               nav#menu ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    text-align: center;
+               }
+               nav#menu ul li{
+				   background-color: black;
+                    float: left;
+                    width: 150px;
+                    line-height: 40px;
+                    display: block;
+                    position: relative;
+                    height: 40px;
+                    text-align: center;
+                    z-index: 2;
+               }
+                nav#menu ul li:hover {
+                    display: inline-block;
+                    height: 40px;
+                    width: 150px;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, .5);
+                }
+                   li#bottomLink{
+                        border-bottom: solid 2px black;
+                        border-top: solid 2px black;
+                    }
+                    nav#menu ul li #topLink{
+                        border-top: none;
+                    }
+                    nav#menu ul ul {
+                        position: absolute; 
+                        left: 0px; 
+                        visibility: hidden;
+                    }
+                        nav#menu ul li:hover ul {
+                            visibility: visible;
+                        }
+                            nav#menu ul li ul li {
+                                float: none; 
+                                width: 150px; 
+                                text-align: left; 
+                                padding-left: 8px; 
+                                border-top: solid 2px black; 
+                                background-color: rgba(0, 0, 0, .5);
+                                border-left: solid 2px black;
+                                border-right: solid 2px black;
+                            }    
+                            nav#menu ul li ul li:hover{
+                                background-color: rgba(0, 0, 0, .75);
+                                text-align: left;
+                            }
+        div#left{
+            float: left;
+            height: 610px;
+            width: 75%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: white;
+            position: relative;
+        }
+        div#right{
+            float: right;
+            width: 25%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            right: 0;
+            background-color: white;
+            position: relative;
+            }
+            nav#studentWebsites a{
+                text-decoration: none;
+                display: block;
+                color: #fff;
+                margin: 0;
+            }
+                nav#studentWebsites ul{
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                }
+                nav#studentWebsites ul li{
+                    border-top: 1px solid rgb(110, 110, 110);
+                    border-bottom: 1px solid rgb(60, 60, 60);
+                    list-style: none;
+                    margin: 0;
+                    padding: 8px;
+                    background-color: rgb(85, 85, 85);
+                }
+                nav#studentWebsites li:hover a{
+                    background-color: black;
+                    color: white;
+                }
+                nav#studentWebsites li:hover{
+                    background-color: white;
+                    color: black;
+                    border-right: solid 4px black;
+                }
+                nav#studentWebsites a:hover{
+                    color: black;
+                }
+                nav#studentWebsites ul li#studentTopLink{
+                        border-top: none;
+                    }
+                nav#studentWebsites ul li#studentBottomLink{
+                        border-bottom: none;
+                    }
+            br#clear{
+                clear: both;
+                float: none;
+            }
+            footer{
+                width: 85%;
+                height: 10%;
+                    min-height: 50px;
+                background-color: rgba(0, 0, 0, .5);
+                margin: 0 auto;
+                padding: 0;
+                color: white;
+            }
+            p#copyright{
+                color: white;
+                margin: 0 33%;
+                padding: 40px 0;
+            }
+    </style>
+</head>
+<body>
+<div id='wrapper'>
+    <div id='header'>
+        <div id='pic'>
+            <img src="Pictures/Name2.png" alt="My name">
+        </div>
+        <nav id='menu'>
+            <ul>
+                <li id='current'><a href="">Home</a></li>
+                <li><a href="">Assignments</a>
+                    <ul>
+                        <li id = "topLink"><a href="Assignments/Assignment1.html">Assignment1</a></li>
+                        <li><a href="Assignments/Assignment2.html">Assignment2</a></li>
+                        <li><a href="Assignments/Assignment3.html">Assignment3</a></li>
+                        <li><a href="Assignments/Assignment4.html">Assignment4</a></li>
+                        <li><a href="Assignments/Assignment5.html">Assignment5</a></li>
+                        <li><a href="Assignments/thanksgiving.html">Thanksgiving</a></li>
+                        <li id="bottomLink"><a href="Assignments/responsiveDesign.html">Responsive Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Projects</a>
+                    <ul>
+                        <li id = "topLink"><a href="Movies/index.html">Semester 1 Exam</a></li>
+                        <li><a href="Tennis/index.html">Semester 2 Exam</a></li>
+                        <li><a href="php/addressbook/index.php">Addressbook</a></li>
+                        <li><a href="Programming/index.php">Programming</a></li>
+                        <li id = "bottomLink"><a href="Minecraft/index.php">Minecraft</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Photoshop</a>
+                    <ul>
+                        <li id = "topLink"><a href="Photoshop/Photoshop.html">Photo Enhancement</a></li>
+                        <li id = "bottomLink"><a href="Backgrounds/index.html">Backgrounds</a></li>
+                    </ul>
+                </li>
+                <li><a href="php/addressbook/index.php">Addressbook</a>
+                    <ul>
+                        <li><a href="php/addressbook/index.php">Home</a></li>
+                        <li><a href="php/addressbook/add_address.php">Add New Address</a></li>
+                        <li><a href="php/addressbook/delete_address.php">Delete Address</a></li>
+                        <li id = "bottomLink"><a href="search.php">Search</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>  
+    </div> <!-- ending of header -->
+        <div id="left">
+            <p>My name is Troy Goodin, I am currently a junior at Kenton High School.</p>
+        </div>
+        <div id='right'>
+            <nav id="studentWebsites">
+                <ul>
+                    <a href="http://c2015.khs.kcs/~15aldraustin/"><li id="studentTopLink">Austin Aldrich</li></a>
+                    <a href="http://c2015.khs.kcs/~15freytroy/"><li>Troy Freytag</li></a>
+                    <a href="http://c2016.khs.kcs/~16baumerik/"><li>Erik Baum</li></a>
+                    <a href="http://c2015.khs.kcs/~15hinedallas/"><li>Dallas Hines</li></a>
+                    <a href="http://c2015.khs.kcs/~15kingnathaniel/home/"><li>Nathaniel King</li></a>
+                    <a href="http://c2015.khs.kcs/~15musgbrayden/"><li>Brayden Musgrave</li></a>
+                    <a href="http://c2015.khs.kcs/~15finkdaniel/"><li>Daniel Fink</li></a>
+                    <a href="http://c2016.khs.kcs/~16howaclay/"><li>Clay Howard</li></a>
+                    <a href="http://c2015.khs.kcs/~15inmaeli/"><li>Eli Inman</li></a>
+                    <a href="http://c2015.khs.kcs/~15knernathan/"><li>Nathan Knerr</li></a>
+                    <a href="http://c2015.khs.kcs/~15mannbrandon/"><li>Brandon Manns</li></a>
+                    <a href="http://c2016.khs.kcs/~16mckeanthony/"><li>Anthony McKee</li></a>
+                    <a href="http://c2015.khs.kcs/~15mclajeff/"><li>Jeff McLane</li></a>
+                    <a href="http://c2015.khs.kcs/~15osbonate/"><li>Nate Osborn</li></a>
+                    <a href="http://c2015.khs.kcs/~15rothdylan/"><li>Dylan Rothgery</li></a>
+                    <a href="http://c2015.khs.kcs/~15staltaylor"><li>Taylor Staley</li></a>
+                    <a href="http://c2015.khs.kcs/~15tillaarin/"><li id="studentBottomLink">Aarin Tillman</li></a>
+                </ul>
+            </nav>
+        </div>
+        <br id="clear"/>
+</div>
+    <footer>
+        <p id="copyright">By Troy Goodin | This is where I'd put my copyrights... if I had any!</p>        
+    </footer>
+</body>
+</html> <!-- ending of footer -->

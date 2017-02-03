@@ -1,0 +1,235 @@
+html{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-width: 1100px;
+}
+
+body{   
+    background-image: url(../Pictures/background.jpg);
+    
+   background-size:100% 100%;font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;background-attachment:fixed;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    min-width: 1100px;
+    width:100%;
+    }
+  div.wrapper{
+                width: 100%;
+                    min-width: 1100px;
+                margin: 0 auto 0 auto;
+                padding: 0;
+            }
+        header{
+            width: 100%;
+                min-width: 1100px;
+            text-align: center;
+        }
+        div.pic{
+            height: 150px;
+            width: 100%;
+            min-width: 1100px;
+        }
+        nav.topMenu{
+                background: #efefef; 
+                background: -webkit-linear-gradient(#c9c9c9 0%, #818181 100%);
+                background: -o-linear-gradient(#c9c9c9 0%, #818181 100%);
+                background: -moz-linear-gradient(#c9c9c9 0%, #818181 100%);
+                background: linear-gradient(#c9c9c9 0%, #818181 100%);
+                box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+                border-top: solid 1px #fff;
+                border-bottom: solid 1px #fff;
+        }
+            nav.topMenu a{
+                -o-transition: all 1s linear;
+                -moz-transition: all 1s linear;
+                -webkit-transition: all 1s linear;
+                transition: all 1s linear;
+            }
+            nav.topMenu ul{
+                margin: 0;
+                list-style: none;
+                position: relative;
+                display: inline-block;
+            }
+            nav.topMenu > ul{
+                width: 660px;
+                margin: 0 auto 0 auto;
+                padding:0;
+            }
+            
+                nav.topMenu ul:after{
+                    content: "";
+                    clear: both;
+                    display: block;
+                }
+                nav.topMenu ul li{
+                    float: left;
+                }
+                    nav.topMenu ul li a{
+                        font-weight: 700;
+                        font-family: 'Chivo', sans-serif;
+                        display: block;
+                        padding: 25px 40px;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    nav.topMenu ul li:hover{
+                        background: #4b545f;
+                        background: -webkit-linear-gradient(#696969 0%,#888 40%);
+                        background: -o-linear-gradient(#696969 0%,#888 40%);
+                        background: -moz-linear-gradient(#696969 0%,#888 40%);
+                        background: linear-gradient(#696969 0%,#888 40%);
+                    }
+                        nav.topMenu ul li:hover a{
+                            color: #000;
+                        }
+                    nav.topMenu ul ul{
+                        display: none;
+                        background: #888;
+                        border-radius: 0px;
+                        padding: 0;
+                        position: absolute;
+                        top: 100%;
+                    }
+                        nav.topMenu ul li:hover > ul{
+                            display: block;
+                        }
+                        nav.topMenu ul ul li{
+                            float: none;
+                            border-top: 1px solid #9a9a9a;
+                            border-bottom: 1px solid #696969;
+                            position: relative;
+                            
+                            -o-transition: all 0.5s;
+                            -moz-transition: all 0.5s;
+                            -webkit-transition: all 0.5s;
+                            transition: all 0.5s;
+                        }
+                            nav.topMenu ul ul li a{
+                                padding: 15px 40px;
+                                color: #fff !important;
+                            }
+                            nav.topMenu ul ul li:hover{
+                                background: #696969;
+                                color: #000;
+                            }
+                                nav.topMenu ul ul li a:hover{
+                                    color: #000 !important;
+                                }
+                            nav.topMenu ul ul ul{
+                                position: absolute;
+                                left: 100%;
+                                top: 0;
+                            }
+                                nav.topMenu ul ul ul li{
+                                    width: 200px;
+                                }
+                                    nav.topMenu ul ul ul li a{
+                                        color: #fff;
+                                    }
+                                    nav.topMenu ul ul ul li:hover{
+
+                                    }
+                                        nav.topMenu ul ul ul li:hover a{
+                                            color: #000;
+                                        }
+                    div.content{
+                        font-family: 'Chivo', sans-serif;
+                        background: #fff;
+                        background: -webkit-linear-gradient(#fff 0%,#C2C2C2 100%);
+                        background: -o-linear-gradient(#fff 0%,#C2C2C2 100%);
+                        background: -moz-linear-gradient(#fff 0%,#C2C2C2 100%);
+                        background: linear-gradient(#fff 0%,#C2C2C2 100%);
+                            min-height: 800px;
+                        width: 60%;
+                            min-width: 600px;
+                        border-radius: 10px;
+                        border: solid 15px rgb(75, 75, 75);
+                        float: left;
+                        margin: 5px 0 0 19%;
+                    }
+                    div.playersContent{
+                        font-family: 'Chivo', sans-serif;
+                        background: #fff;
+                        background: -webkit-linear-gradient(#696969 0%,#888 40%);
+                        background: -o-linear-gradient(#696969 0%,#888 40%);
+                        background: -moz-linear-gradient(#696969 0%,#888 40%);
+                        background: linear-gradient(#696969 0%,#888 40%);
+                        width: 80%;
+                            min-width: 600px;
+                        border-radius: 10px;
+                        border: solid 15px rgb(75, 75, 75);
+                        float: left;
+                         margin: 25px 0 7px 10px;
+                    }
+                        div.content h1.header{
+                        font-family: 'Chivo', sans-serif;
+                        font-size: 350%;
+                        margin: 0;
+                        }
+                        div.content p{
+                            width: 75%;
+                            margin: 5px auto;
+                            text-align: left;
+                        }
+                        table.results{
+                            border: solid 2px black;
+                            margin: 10px auto;
+                            border-collapse: collapse;
+                        }
+                            table.results thead{
+                                background-color: gray;
+                                color: #fff;
+                            }
+                            table.results td{
+                                border: solid 2px black;
+                                padding: 5px 45px;
+                            }
+                            table.results tr:hover{
+                                background-color: gray;    
+                            }
+                        table.players td{
+                            border-bottom: solid 1px black;        
+                        }
+                            table.players td.leftColumn{
+                                padding-right: 600px;    
+                            }
+                        iframe.schedule{
+                            width: 100%;
+                            height: 800px;
+                        }
+                        div.content div{
+                            width: 100%;
+                            min-width: 600px;
+                            float: left;
+                        }
+                            div.content div img{
+                                float: left;
+                                margin: 50px;
+                            }
+                div.twitter{
+                    float: left;
+                    margin: 150px 0 0 5px;
+                    width: 195px;
+                    height: 700px;
+                }
+            div.clear {
+			clear: both;
+			float: none;
+		}
+            footer{
+            width: 100%;
+                min-width: 1100px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, .5);
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+            p#copyright{
+                margin: auto;
+                padding: 0;
+                text-align: center;
+                font-family: 'Chivo', sans-serif;
+            }

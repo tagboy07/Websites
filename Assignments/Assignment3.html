@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="author" content="Troy Goodin"/>
+<meta name="keywords" content=", html"/>
+<meta name="description" content="Practice html with shadow text."/>
+	<title>Troy's Homepage</title>
+	<style type="text/css" media="screen">
+	html{
+		min-height: 100%;
+	}
+	body {
+		font-family: Arial, "MS Trebuchet", sans-serif;
+		color: #fff;
+		margin:0;
+		background-image: -webkit-linear-gradient(top, #000000 0%, #ffffff 100%);
+        background-repeat:no-repeat;
+	}
+	.head{
+		color: #fff;
+		margin:auto;
+		text-align: center;
+	}
+	 h1.topText {
+	 	position:absolute;
+		z-index:1;
+		color:#964b00;
+		top:8px;
+		left:13px;
+			 }
+	 h1.shadowText {
+ 		position:absolute;
+ 		z-index:-1;
+ 		color:#000000;
+		left:10px;
+		top:5px;
+ }
+ img.topImage {
+ 		position:absolute;
+		left:60px;
+		top:65px;
+		z-index:0;
+ }
+ img.bottomImage {
+ 		position:absolute;
+		top:60px;
+		z-index:-1;
+ }
+ </style>
+</head>
+<body>
+<!-- Shadowed text and overlapping images using z-index -->
+<a class="back" href="../">Back</a>
+
+<h1 class="topText">Diethel</h1>
+
+<h1 class="shadowText">Diethel</h1>
+
+<img class="topImage" src="../Pictures/kole.png" alt="top image" width="100"
+height="auto" />
+
+<img class="bottomImage" src="../Pictures/diesel.jpg" alt="diesel" width="320"
+height="240" />
+
+</body>
+</html>

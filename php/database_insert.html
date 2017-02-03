@@ -1,0 +1,33 @@
+<?php
+try{
+    $link = new \PDO(   'mysql:host=mysql.kentoncityschools.org;dbname=funkhouserj', 
+                        'funkhouserj', 
+                        'your_password', 
+                        array(
+                            \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION, 
+                            \PDO::ATTR_PERSISTENT => false, 
+                            \PDO::MYSQL_ATTR_INIT_COMMAND => 'set names utf8mb4'
+                        )
+                    );
+ 
+    $handle = $link->prepare('INSERT INTO addresses2014 (firstname, lastname) VALUES (:firstname, :lastname)');
+
+    $handle->bindParam(':firstname', $firstname);
+    $handle->bindParam(':lastname', $lastname);
+
+
+    // insert one row
+    $firstname = 'Mickey';
+    $lastname = 'Mouse';
+    $handle->execute();
+
+    // insert another row with different values
+    $firstname = 'Donald';
+    $lastname = 'Duck';
+    $handle->execute();
+    
+}
+catch(\PDOException $ex){
+    print($ex->getMessage());
+}
+?>
